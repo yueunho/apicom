@@ -2,6 +2,7 @@ package com.or.kr.excel.domain;
 
 import org.apache.ibatis.type.Alias;
 
+@SuppressWarnings("serial")
 @Alias("excelVo")
 public class ExcelVo {
  private String 가감점키;
