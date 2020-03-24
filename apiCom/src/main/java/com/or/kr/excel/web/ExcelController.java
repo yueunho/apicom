@@ -25,7 +25,7 @@ import com.or.kr.excel.service.ExcelService;
 
 
 @Controller
-@RequestMapping("/excel/")
+@RequestMapping(value = "/excel/")
 public class ExcelController {
     @Autowired
 	ExcelService excelService;
