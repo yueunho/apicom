@@ -13,14 +13,14 @@
 		  function submit() {
 			  var data =$("#formname1").serialize();
 			  console.log(data);
-			 /*  $.ajax({
+			   $.ajax({
 				    url: "./excelPostTest.do",
 				    type: "POST",
 				    data: data,
 				    success: function(data){
 				    	
 				    }
-		 	 }); */
+		 	 }); 
 		}
 		 
 

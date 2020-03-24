@@ -34,7 +34,7 @@ public class ExcelController {
 	public ModelAndView  excel(ModelMap model, HttpServletRequest request,
 			@ModelAttribute("excelVo") ExcelVo excelVo){
 		excelVo.set±¸ºÐ("A");
-		List<ExcelVo> ExcelData =   (List<ExcelVo>) excelService.getTest(excelVo);
+		List<ExcelVo> ExcelData = (List<ExcelVo>) excelService.getTest(excelVo);
 	    ExcelVo excelVoMap = ExcelData.get(0);
 	    return new ModelAndView("excel/excel", model);
 	}
