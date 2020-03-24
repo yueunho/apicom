@@ -3,18 +3,20 @@
 <mapper namespace="excelDao">
   <select id="test" resultType="excelVo" parameterType="excelVo">
     	select 
-        	가감점키,
-        	구분,
-        	평가항목,
-        	평가내용,
-        	점수,
-        	사용여부,
-        	고정여부,
-        	게시판이름
+        	user_seq,
+        	user_id,
+        	user_name 
         from 
-        	AT_가감점
-        <where>
-             AND  구분 =#{구분}
-        </where>	
+        	user
     </select>
+    
+    <insert id="insertTest"  parameterType="excelVo">
+    	INSERT INTO user (
+        	user_id,
+        	user_name 
+    	)VALUES (
+    		#{userId},
+    		#{userName}
+    	)
+    </insert>
 </mapper>

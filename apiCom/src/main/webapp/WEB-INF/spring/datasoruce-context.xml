@@ -13,7 +13,7 @@
 	
 	<!-- Root Context: defines shared resources visible to all other web components -->
     <context:property-placeholder location="classpath:WEB-INF/classes/global/*"/>
-	
+
 	<bean id="dataSourceSpied" class="org.apache.commons.dbcp.BasicDataSource" destroy-method="close">
  		 <property name="driverClassName" value='${Globals.DriverClassName}'/>
          <property name="url" value='${Globals.Url}' />

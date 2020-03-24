@@ -1,6 +1,7 @@
 package com.or.kr.excel.dao;
 
 import java.util.List;
+import java.util.Map;
 
 import org.apache.ibatis.session.SqlSession;
 import org.mybatis.spring.SqlSessionTemplate;
@@ -15,5 +16,8 @@ public class ExcelDao  {
 	private SqlSessionTemplate sqlSession; 
 	public List<ExcelVo> getTest(ExcelVo excelVo) {
 		return sqlSession.selectList("excelDao.test",excelVo);
+	}
+	public int insertTest(ExcelVo excelVo) {
+		return sqlSession.insert("excelDao.insertTest",excelVo);
 	}
 }
