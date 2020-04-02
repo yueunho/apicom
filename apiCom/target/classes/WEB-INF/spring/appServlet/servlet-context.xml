@@ -18,11 +18,11 @@
 		http://www.springframework.org/schema/aop http://www.springframework.org/schema/aop/spring-aop-4.3.xsd
 		http://www.springframework.org/schema/tx http://www.springframework.org/schema/tx/spring-tx-4.3.xsd
 		http://www.springframework.org/schema/util http://www.springframework.org/schema/util/spring-util-4.3.xsd">
-
 	<!-- DispatcherServlet Context: defines this servlet's request-processing infrastructure -->
    
 	<!-- Enables the Spring MVC @Controller programming model -->
-	  
+
+	<annotation-driven /> 
     <context:property-placeholder location="classpath:WEB-INF/classes/global/*"/>
 	<!-- Handles HTTP GET requests for /resources/** by efficiently serving up static resources in the ${webappRoot}/resources directory -->
 	<resources mapping="/resources/**" location="/resources/" />
@@ -33,7 +33,6 @@
 		<beans:property name="suffix" value=".jsp" />
 	</beans:bean>
 	
-	<context:component-scan base-package="com.or.kr" />
-	
+	<context:component-scan base-package="com.or.kr"/>
 	
 </beans:beans>

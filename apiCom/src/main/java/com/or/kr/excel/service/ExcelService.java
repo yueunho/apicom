@@ -30,6 +30,10 @@ public class ExcelService {
 		return  result;
 	}
 	
+	
+	public void bacthTest() {
+		System.out.println("test");
+	}
 
 
 }
